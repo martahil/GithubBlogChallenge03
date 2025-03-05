@@ -13,7 +13,9 @@ Description project here <edit here>
 
 ## Technologies Used
 
-- Vite: Build tool for optimizing development and performance.
+- Vite: Fast development environment for modern web applications.
+- styled-components: For styling components with dynamic themes.
+    - global styles for consistent design.
 - 
 
 ## Figma Design
