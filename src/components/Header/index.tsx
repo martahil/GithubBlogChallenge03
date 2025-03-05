@@ -3,7 +3,6 @@ import logoHeader from '../../assets/header-logo.svg'
 import headerLeftEffect from '../../assets/header-effect-left.svg'
 import headerRightEffect from '../../assets/header-effect-right.svg'
 
-
 export function Header() {
   return (
     <>

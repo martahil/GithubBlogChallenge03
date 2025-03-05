@@ -16,6 +16,7 @@ Description project here <edit here>
 - Vite: Fast development environment for modern web applications.
 - styled-components: For styling components with dynamic themes.
     - global styles for consistent design.
+- phosphor-react: Icon library for a modern UI.
 - 
 
 ## Figma Design
