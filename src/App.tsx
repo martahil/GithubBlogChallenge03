@@ -3,15 +3,17 @@ import { Profile } from "./components/Profile"
 import { Search } from "./components/Search"
 import { GlobalStyle } from "./styles/global"
 import { PostsProvider } from './contexts/PostsContext'
+import { CompletePostPage } from "./components/CompletePostPage/index"
 
 function App() {
   return (
     <>
       <Header />
-      <Profile />
+      <CompletePostPage />
+      {/* <Profile />
       <PostsProvider>
         <Search />
-      </PostsProvider>
+      </PostsProvider> */}
       <GlobalStyle />
     </>
 

@@ -9,7 +9,8 @@ Description project here <edit here>
 
 ## Features
 
-- <edit here>
+- Calculate posts number (counter)
+- Each post displays how long ago it was published on the website. The system automatically calculates the time difference and formats it
 
 ## Technologies Used
 
@@ -17,7 +18,9 @@ Description project here <edit here>
 - styled-components: For styling components with dynamic themes.
     - global styles for consistent design.
 - phosphor-react: Icon library for a modern UI.
-- 
+- json-server (dev dependency): Mock API for handling transactions.
+- Context (React Context API) – Manages and provides post data across the application
+
 
 ## Figma Design
 
