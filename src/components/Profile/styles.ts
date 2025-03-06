@@ -7,8 +7,9 @@ export const ProfileContainer = styled.main`
   margin: 0 auto;
   border-radius: 10px;
   overflow: hidden; 
+  height: 13rem;
   position: relative;
-  top: -7.1875rem;
+  top: -5.395rem;
 `
 
 export const ProfileContent = styled.div`
