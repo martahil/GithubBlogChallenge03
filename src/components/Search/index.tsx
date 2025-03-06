@@ -1,25 +1,9 @@
-import { useEffect, useState } from "react";
 import { IndividualPost, PostContent, PostDate, PostsCounter, PostsList, PostTitle, PostTitleAndDate, SearchContainer, SearchContent, SearchHeader, SearchTitleAndCounter } from "./styles";
-
-interface Posts {
-  id: number;
-  title: string;
-  content: string;
-  postedAt: string;
-}
+import { useContext } from "react";
+import { PostsContext } from '../../contexts/PostsContext'
 
 export function Search() {
-  const [posts, setPosts] = useState<Posts[]>([])
-
-  async function loadPosts() {
-    const response = await fetch('http://localhost:3000/posts')
-    const data = await response.json()
-    setPosts(data)
-  }
-
-  useEffect(() => {
-    loadPosts()
-  }, [])
+  const { posts } = useContext(PostsContext)
 
   return (
     <>
@@ -27,7 +11,9 @@ export function Search() {
         <SearchContent>
           <SearchTitleAndCounter>
             <SearchHeader>Posts</SearchHeader>
-            <PostsCounter>6 posts</PostsCounter>
+            <PostsCounter>
+              {posts.length === 1 || posts.length === 0 ? `${posts.length} post` : `${posts.length} posts`}
+            </PostsCounter>
           </SearchTitleAndCounter>
           <input type="text" placeholder="Search content" />
           <PostsList>
