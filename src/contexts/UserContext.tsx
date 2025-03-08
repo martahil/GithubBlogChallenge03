@@ -8,7 +8,7 @@ interface User {
   bio: string;
   name: string;
   company: string;
-  // html_url: string;
+  html_url: string;
 }
 
 interface UserContextType {

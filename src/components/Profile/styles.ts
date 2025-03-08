@@ -59,10 +59,17 @@ align-items: center;
 gap: 0.5rem;
 color: #3294F8;
 margin-right: 2rem;
+text-decoration: none;
 
   label {
     font-size: 0.75rem;
     font-weight: bold;
+    cursor: pointer;
+  }
+
+  &:hover {
+    text-decoration: none;
+    cursor: pointer;
   }
 `
 

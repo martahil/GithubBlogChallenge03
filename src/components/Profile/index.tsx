@@ -25,7 +25,7 @@ export function Profile() {
             <NameAndGithub>
               <Name>{user.name}</Name>
 
-              <Github>
+              <Github as="a" href={user.html_url} target="_blank" rel="noopener noreferrer">
                 <label>GITHUB</label>
                 <ArrowSquareOut size={12} />
               </Github>
