@@ -44,7 +44,7 @@ export function Profile() {
               </Company>
               <Followers>
                 <img src={followersIcon} />
-                <span>{user.followers} followers</span>
+                {user.followers === 1 || user.followers === 0 ? `${user.followers} follower` : `${user.followers} followers`}
               </Followers>
             </Info>
           </MainInfo>
