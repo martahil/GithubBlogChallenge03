@@ -18,7 +18,7 @@ export function Search() {
           <input type="text" placeholder="Search content" />
           <PostsList>
             {posts.map((post) => {
-              const postedDate = new Date(post.postedAt);
+              const postedDate = new Date(post.created_at);
               const timeAgoInMinutes = (new Date().getTime() - postedDate.getTime()) / 1000 / 60;
               let timeAgo = "now";
 
@@ -42,12 +42,12 @@ export function Search() {
               }
 
               return (
-                <IndividualPost key={post.id}>
+                <IndividualPost key={post.number}>
                   <PostTitleAndDate>
                     <PostTitle>{post.title}</PostTitle>
                     <PostDate>{timeAgo}</PostDate>
                   </PostTitleAndDate>
-                  <PostContent>{post.content}</PostContent>
+                  <PostContent>{post.body}</PostContent>
                 </IndividualPost>
               )
             })}

@@ -7,27 +7,39 @@ export const ProfileContainer = styled.main`
   margin: 0 auto;
   border-radius: 10px;
   overflow: hidden; 
-  height: 13rem;
+  /* height: 13rem; */
   position: relative;
   top: -5.395rem;
 `
 
 export const ProfileContent = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: row;  
+`
 
+export const AvatarImg = styled.div`
   img {
     width: 9.25rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
     margin-left: 2.5rem;
     margin-right: 2rem;
+    border-radius: 8px;
   }
 `
 
-export const MainInfo = styled.span`
+export const MainInfo = styled.div`
   display: flex;
   flex-direction: column;
+  width: 100%; 
+  max-width: 54rem;
+`
+
+export const NameAndGithub = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+  align-items: center;
 `
 
 export const Name = styled.span`
@@ -36,12 +48,22 @@ export const Name = styled.span`
   color: #E7EDF4;
   white-space: nowrap; 
   margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
 `
 
-export const NameAndHithub = styled.span`
-  display: flex;
-  justify-content: space-between;
-  margin-top: 2.5rem;
+export const Github = styled.div`
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 0.5rem;
+color: #3294F8;
+margin-right: 2rem;
+
+  label {
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
 `
 
 export const Bio = styled.span`
@@ -100,17 +122,3 @@ export const Followers = styled.div`
   }
 `
 
-export const Github = styled.div`
-display: flex;
-flex-direction: row;
-align-items: center;
-gap: 0.5rem;
-color: #3294F8;
-margin-right: 2rem;
-
-  label {
-    font-size: 0.75rem;
-    font-weight: bold;
-    
-  }
-`

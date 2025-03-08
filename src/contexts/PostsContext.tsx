@@ -1,10 +1,11 @@
+import axios from 'axios';
 import { createContext, ReactNode, useEffect, useState } from 'react'
 
 interface Post {
-  id: number;
+  number: number;
   title: string;
-  content: string;
-  postedAt: string;
+  body: string;
+  created_at: string;
 }
 
 interface PostContextType {
@@ -25,12 +26,13 @@ export function PostsProvider({ children }:
     ([])
 
   async function loadPosts() {
-    const response = await fetch('http://localhost:3000/posts')
-    const data = await response.json()
+    const response = await axios.get('https://api.github.com/search/issues', {
+      params: { q: 'repo:martahil/GithubBlogChallenge03' }
+    });
 
-    setPosts(data)
+    const issues = response.data.items;
+    setPosts(issues)
   }
-
 
   useEffect(() => {
     loadPosts()

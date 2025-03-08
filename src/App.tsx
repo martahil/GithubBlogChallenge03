@@ -4,16 +4,19 @@ import { Search } from "./components/Search"
 import { GlobalStyle } from "./styles/global"
 import { PostsProvider } from './contexts/PostsContext'
 import { CompletePostPage } from "./components/CompletePostPage/index"
+import { UserProvider } from "./contexts/UserContext"
 
 function App() {
   return (
     <>
       <Header />
-      <CompletePostPage />
-      {/* <Profile />
+      {/* <CompletePostPage /> */}
+      <UserProvider>
+        <Profile />
+      </UserProvider>
       <PostsProvider>
         <Search />
-      </PostsProvider> */}
+      </PostsProvider>
       <GlobalStyle />
     </>
 
