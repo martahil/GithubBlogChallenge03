@@ -129,3 +129,15 @@ export const Followers = styled.div`
   }
 `
 
+export const Loading = styled.div`
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 2.5rem;
+  margin-right: 2rem;
+  font-size: 1rem;
+  font-weight: 400; /* Regular */  
+  color: #AFC2D4;
+  height: 13rem;;
+`
+
