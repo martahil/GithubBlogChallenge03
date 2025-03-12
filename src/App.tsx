@@ -1,25 +1,19 @@
-import { Header } from "./components/Header"
-import { Profile } from "./components/Profile"
-import { Search } from "./components/Search"
 import { GlobalStyle } from "./styles/global"
 import { PostsProvider } from './contexts/PostsContext'
-import { CompletePostPage } from "./components/CompletePostPage/index"
 import { UserProvider } from "./contexts/UserContext"
+import { BrowserRouter } from "react-router-dom";
+import { Router } from "./Router"
 
 function App() {
   return (
-    <>
-      <Header />
-      {/* <CompletePostPage /> */}
+    <BrowserRouter>
       <UserProvider>
-        <Profile />
+        <PostsProvider>
+          <Router />
+        </PostsProvider>
       </UserProvider>
-      <PostsProvider>
-        <Search />
-      </PostsProvider>
       <GlobalStyle />
-    </>
-
+    </BrowserRouter>
   )
 }
 

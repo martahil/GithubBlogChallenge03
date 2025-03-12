@@ -5,21 +5,19 @@ import headerRightEffect from '../../assets/header-effect-right.svg'
 
 export function Header() {
   return (
-    <>
-      <HeaderContainer>
-        <HeaderLeftEffect>
-          <img src={headerLeftEffect} />
-        </HeaderLeftEffect>
+    <HeaderContainer>
+      <HeaderLeftEffect>
+        <img src={headerLeftEffect} />
+      </HeaderLeftEffect>
 
-        <LogoAndTitle>
-          <img src={logoHeader} />
-          <span>GITHUB BLOG</span>
-        </LogoAndTitle>
+      <LogoAndTitle>
+        <img src={logoHeader} />
+        <span>GITHUB BLOG</span>
+      </LogoAndTitle>
 
-        <HeaderRightEffect>
-          <img src={headerRightEffect} />
-        </HeaderRightEffect>
-      </HeaderContainer>
-    </>
+      <HeaderRightEffect>
+        <img src={headerRightEffect} />
+      </HeaderRightEffect>
+    </HeaderContainer>
   )
 }
