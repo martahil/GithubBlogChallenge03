@@ -67,6 +67,11 @@ export const IndividualPost = styled.div`
   overflow: hidden; 
   display: flex;
   flex-direction: column;
+  cursor: pointer;
+
+  :link {
+    text-decoration: none;
+  }
 `
 
 export const PostTitleAndDate = styled.div`

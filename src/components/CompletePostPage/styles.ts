@@ -31,6 +31,17 @@ export const Back = styled.div`
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  color: #3294F8;
+
+  label {
+    cursor: pointer;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
 
   img {
     width: 0.75rem;
@@ -42,6 +53,17 @@ export const Github = styled.div`
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;  
+  color: #3294F8;
+
+  label {
+    cursor: pointer;
+  }
+  
+  &:hover {
+    text-decoration: none;
+  }
 
   img {
     width: 0.75rem;
@@ -107,7 +129,6 @@ export const Post = styled.div`
   padding-bottom: 2.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
-
 `
 
 export const Text = styled.div`
@@ -137,5 +158,11 @@ export const ThirdSection = styled.div`
   margin-top: 1.5rem;
   margin-bottom: 2.5rem;
   font-family: 'Fira Code', monospace;
+`
+
+export const NoPostMessage = styled.p`
+  font-size: 1rem;
+  font-weight: 400; /* Regular */  
+  color: #AFC2D4;
 `
 

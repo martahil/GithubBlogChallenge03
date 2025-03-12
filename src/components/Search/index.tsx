@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { IndividualPost, PostContent, PostDate, PostsCounter, PostsList, PostTitle, PostTitleAndDate, SearchContainer, SearchContent, SearchHeader, SearchTitleAndCounter } from "./styles";
 import { useContext } from "react";
 import { PostsContext } from '../../contexts/PostsContext'
@@ -43,11 +44,13 @@ export function Search() {
 
               return (
                 <IndividualPost key={post.number}>
-                  <PostTitleAndDate>
-                    <PostTitle>{post.title}</PostTitle>
-                    <PostDate>{timeAgo}</PostDate>
-                  </PostTitleAndDate>
-                  <PostContent>{post.body}</PostContent>
+                  <Link to={`/issue/${post.number}`}>
+                    <PostTitleAndDate>
+                      <PostTitle>{post.title}</PostTitle>
+                      <PostDate>{timeAgo}</PostDate>
+                    </PostTitleAndDate>
+                    <PostContent>{post.body}</PostContent>
+                  </Link>
                 </IndividualPost>
               )
             })}
