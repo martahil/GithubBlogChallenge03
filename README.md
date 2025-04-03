@@ -6,6 +6,11 @@ A blogging application that fetches and displays posts from a GitHub repository'
 
 ![My Project Screenshot](/src/assets/website-screenshot.png)
 
+## Behind the Scenes
+
+During the development of this project, I broke my right arm—being right-handed—which made coding significantly more challenging. 
+To overcome this, I explored various AI tools and accessibility technologies for people with disabilities (PCD) to continue working efficiently and complete the project.
+
 ## Features
 
 - Displaying GitHub profile information: the profile section showcases user details retrieved from GitHub's API, including avatar, name, username, professional occupation, company, and follower count.
