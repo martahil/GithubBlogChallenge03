@@ -65,8 +65,8 @@ export const IndividualPost = styled.div`
   border-radius: 10px;
   align-items: flex-start;
   overflow: hidden; 
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
   cursor: pointer;
 
   :link {
@@ -79,7 +79,7 @@ export const PostTitleAndDate = styled.div`
   justify-content: space-between;
   gap: 1rem;
   margin-bottom: 1.25rem;
-`
+  `
 
 export const PostTitle = styled.span`
   font-size: 1.25rem;
@@ -106,6 +106,12 @@ export const PostContent = styled.span`
   color: #AFC2D4;
   align-items: flex-start;  
   line-height: 2rem;
+`
+
+export const IndividualPostTxt = styled.div`
+  p strong {
+    font-weight: 400;
+  }
 `
 
 

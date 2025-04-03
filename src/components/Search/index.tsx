@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom'
-import { IndividualPost, PostContent, PostDate, PostsCounter, PostsList, PostTitle, PostTitleAndDate, SearchContainer, SearchContent, SearchHeader, SearchTitleAndCounter } from "./styles";
+import { IndividualPost, IndividualPostTxt, PostContent, PostDate, PostsCounter, PostsList, PostTitle, PostTitleAndDate, SearchContainer, SearchContent, SearchHeader, SearchTitleAndCounter } from "./styles";
 import { useContext } from "react";
 import { PostsContext } from '../../contexts/PostsContext'
+import ReactMarkdown from 'react-markdown';
 
 export function Search() {
   const { posts } = useContext(PostsContext)
@@ -49,7 +50,13 @@ export function Search() {
                       <PostTitle>{post.title}</PostTitle>
                       <PostDate>{timeAgo}</PostDate>
                     </PostTitleAndDate>
-                    <PostContent>{post.body}</PostContent>
+                    <PostContent>
+                      <IndividualPostTxt>
+                        <ReactMarkdown>
+                          {post.body}
+                        </ReactMarkdown>
+                      </IndividualPostTxt>
+                    </PostContent>
                   </Link>
                 </IndividualPost>
               )

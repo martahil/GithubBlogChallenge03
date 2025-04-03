@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const CompletePostContainer = styled.main`
 `
@@ -131,12 +131,6 @@ export const Post = styled.div`
   padding-right: 2rem;
 `
 
-export const Text = styled.div`
-  font-size: 1rem;
-  font-weight: 400; /* Regular */  
-  color: #AFC2D4;
-`
-
 export const FirstSection = styled.span`
 `
 
@@ -166,3 +160,30 @@ export const NoPostMessage = styled.p`
   color: #AFC2D4;
 `
 
+export const StyledMarkdown = styled.div`
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #afc2d4;
+    margin-bottom: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #3294f8;
+    text-decoration: underline;
+  }
+
+  h1:has(+ pre) {
+    margin-bottom: 1.5rem; 
+  }
+
+  li {
+    margin-left: 1.3rem;
+  }
+
+  li:last-child {
+    margin-bottom: 1.5rem;
+  }
+`;
