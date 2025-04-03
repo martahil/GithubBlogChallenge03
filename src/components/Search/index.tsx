@@ -1,11 +1,19 @@
 import { Link } from 'react-router-dom'
 import { IndividualPost, IndividualPostTxt, PostContent, PostDate, PostsCounter, PostsList, PostTitle, PostTitleAndDate, SearchContainer, SearchContent, SearchHeader, SearchTitleAndCounter } from "./styles";
-import { useContext } from "react";
+import { useState, useContext } from "react";
 import { PostsContext } from '../../contexts/PostsContext'
 import ReactMarkdown from 'react-markdown';
 
 export function Search() {
   const { posts } = useContext(PostsContext)
+
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const filteredPosts = posts.filter(
+    (post) =>
+      post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      post.body.toLowerCase().includes(searchTerm.toLowerCase())
+  )
 
   return (
     <>
@@ -14,12 +22,19 @@ export function Search() {
           <SearchTitleAndCounter>
             <SearchHeader>Posts</SearchHeader>
             <PostsCounter>
-              {posts.length === 1 || posts.length === 0 ? `${posts.length} post` : `${posts.length} posts`}
+              {filteredPosts.length === 1 || filteredPosts.length === 0
+                ? `${filteredPosts.length} post`
+                : `${filteredPosts.length} posts`}
             </PostsCounter>
           </SearchTitleAndCounter>
-          <input type="text" placeholder="Search content" />
+          <input
+            type="text"
+            placeholder="Search content"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
           <PostsList>
-            {posts.map((post) => {
+            {filteredPosts.map((post) => {
               const postedDate = new Date(post.created_at);
               const timeAgoInMinutes = (new Date().getTime() - postedDate.getTime()) / 1000 / 60;
               let timeAgo = "now";

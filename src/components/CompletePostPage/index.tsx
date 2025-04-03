@@ -90,10 +90,10 @@ export function CompletePostPage() {
                           background: "#112131",
                           padding: "1rem",
                           borderRadius: "2px",
-                          marginBottom: "1.5rem"
+                          marginBottom: "1.5rem",
                         },
                         'code[class*="language-"]': {
-                          fontFamily: "Fira Code",
+                          fontFamily: "Fira Code, monospace",
                           color: "#D5DCE3",
                           background: "#112131",
                           borderRadius: "2px",

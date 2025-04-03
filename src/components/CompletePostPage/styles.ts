@@ -19,12 +19,12 @@ export const Summary = styled.div`
 `
 
 export const GithubAndBack = styled.div`
-display: flex;
-justify-content: space-between;
-align-items: center;
-color: #3294F8;
-font-size: 0.75rem;
-font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #3294F8;
+  font-size: 0.75rem;
+  font-weight: bold;
 `
 
 export const Back = styled.div`
