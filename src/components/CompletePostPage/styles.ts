@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 export const CompletePostContainer = styled.main`
 `
@@ -129,29 +129,6 @@ export const Post = styled.div`
   padding-bottom: 2.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
-`
-
-export const FirstSection = styled.span`
-`
-
-export const FirstLine = styled.span`
-  font-weight: bold;
-`
-
-export const SecondSectionTitle = styled.span`
-  color: #3294F8;
-  text-decoration: underline;
-`
-
-export const SecondSection = styled.span`
-`
-
-export const ThirdSection = styled.div`
-  background: #112131; 
-  padding: 1rem;
-  margin-top: 1.5rem;
-  margin-bottom: 2.5rem;
-  font-family: 'Fira Code', monospace;
 `
 
 export const NoPostMessage = styled.p`

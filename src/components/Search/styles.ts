@@ -1,8 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const SearchContainer = styled.main`
-  /* margin-top: 4.5rem; */
-
   input {
     font-size: 1rem;
     font-weight: 400; /* Regular */
@@ -65,8 +63,6 @@ export const IndividualPost = styled.div`
   border-radius: 10px;
   align-items: flex-start;
   overflow: hidden; 
-  /* display: flex; */
-  /* flex-direction: column; */
   cursor: pointer;
 
   :link {

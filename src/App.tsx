@@ -1,8 +1,8 @@
-import { GlobalStyle } from "./styles/global"
+import { BrowserRouter } from 'react-router-dom'
+import { Router } from './Router'
 import { PostsProvider } from './contexts/PostsContext'
-import { UserProvider } from "./contexts/UserContext"
-import { BrowserRouter } from "react-router-dom";
-import { Router } from "./Router"
+import { UserProvider } from './contexts/UserContext'
+import { GlobalStyle } from './styles/global'
 
 function App() {
   return (

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const ProfileContainer = styled.main`
   background-color: #0B1B2B;
@@ -7,7 +7,6 @@ export const ProfileContainer = styled.main`
   margin: 0 auto;
   border-radius: 10px;
   overflow: hidden; 
-  /* height: 13rem; */
   position: relative;
   top: -5.395rem;
 `
@@ -53,13 +52,13 @@ export const Name = styled.span`
 `
 
 export const Github = styled.div`
-display: flex;
-flex-direction: row;
-align-items: center;
-gap: 0.5rem;
-color: #3294F8;
-margin-right: 2rem;
-text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  color: #3294F8;
+  margin-right: 2rem;
+  text-decoration: none;
 
   label {
     font-size: 0.75rem;
@@ -84,8 +83,7 @@ export const Info = styled.div`
   display: flex;
   gap: 1.5rem;
   margin-right: 2rem;
-  margin-bottom: 1.9375rem;
-  
+  margin-bottom: 1.9375rem;  
 
   span {
     font-size: 1rem;

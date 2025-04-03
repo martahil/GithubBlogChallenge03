@@ -1,7 +1,7 @@
-import { HeaderContainer, HeaderLeftEffect, HeaderRightEffect, LogoAndTitle } from "./styles";
 import logoHeader from '../../assets/header-logo.svg'
 import headerLeftEffect from '../../assets/header-effect-left.svg'
 import headerRightEffect from '../../assets/header-effect-right.svg'
+import { HeaderContainer, HeaderLeftEffect, HeaderRightEffect, LogoAndTitle } from './styles'
 
 export function Header() {
   return (

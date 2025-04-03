@@ -1,10 +1,10 @@
-import { AvatarImg, Bio, Company, Followers, Github, Info, Loading, MainInfo, Name, NameAndGithub, ProfileContainer, ProfileContent, Username } from "./styles"
+import { useContext } from 'react'
+import { UserContext } from '../../contexts/UserContext'
 import usernameIcon from '../../assets/username-icon.svg'
 import companyIcon from '../../assets/company-icon.svg'
 import followersIcon from '../../assets/followers-icon.svg'
-import { ArrowSquareOut } from "phosphor-react"
-import { useContext } from "react"
-import { UserContext } from '../../contexts/UserContext'
+import { ArrowSquareOut } from 'phosphor-react'
+import { AvatarImg, Bio, Company, Followers, Github, Info, Loading, MainInfo, Name, NameAndGithub, ProfileContainer, ProfileContent, Username } from './styles'
 
 export function Profile() {
   const { user } = useContext(UserContext)
@@ -24,7 +24,7 @@ export function Profile() {
               <NameAndGithub>
                 <Name>{user.name}</Name>
 
-                <Github as="a" href={user.html_url} target="_blank" rel="noopener noreferrer">
+                <Github as='a' href={user.html_url} target='_blank' rel='noopener noreferrer'>
                   <label>GITHUB</label>
                   <ArrowSquareOut size={12} />
                 </Github>
