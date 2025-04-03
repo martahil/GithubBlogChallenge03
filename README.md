@@ -2,15 +2,17 @@
 
 ##### React + TypeScript + Vite
 
-Description project here <edit here>
+A blogging application that fetches and displays posts from a GitHub repository's issues, along with user profile information.
 
-<edit below>
 ![My Project Screenshot](/src/assets/website-screenshot.png)
 
 ## Features
 
-- Calculate posts number (counter)
-- Each post displays how long ago it was published on the website. The system automatically calculates the time difference and formats it
+- Displaying GitHub profile information: the profile section showcases user details retrieved from GitHub's API, including avatar, name, username, professional occupation, company, and follower count.
+- Displays a list of posts fetched from GitHub's API, where each post corresponds to a repository issue.
+- Filtering posts by keyword: a search input allows filtering posts dynamically based on user-provided keywords, displaying only the matching results.
+- Calculates posts number (counter)
+- Detailed Post Display: for each individual post, displays the title, author, posting date, number of comments, and full content, all retrieved from GitHub via its API.
 
 ## Technologies Used
 
@@ -18,9 +20,13 @@ Description project here <edit here>
 - styled-components: For styling components with dynamic themes.
     - global styles for consistent design.
 - phosphor-react: Icon library for a modern UI.
-- json-server (dev dependency): Mock API for handling transactions.
-- Context (React Context API) – Manages and provides post data across the application
-
+- context (React Context API) – Manages and provides post data across the application.
+- data consumed from GitHub's API to retrieve repository issues as blog posts and fetch user details for display on the website.
+- axios used for making HTTP requfaça uma ests to GitHub's API.
+- client-side navigation with React Router, defining routes for the homepage and individual post pages.
+- react-markdown for parsing and displaying markdown text.
+- react-syntax-highlighter for syntax highlighting within code blocks.
+- dracula theme applied to the syntax highlighter for a consistent dark mode styling.
 
 ## Figma Design
 
